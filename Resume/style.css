@@ -1,199 +1,354 @@
-f#ibody {
-    font-family: Georgia;
-    color: #444;
+body {
+  border: 0vh;
+  margin: 0%;
+  font-family: 'Josefin Sans';
+  font-style: normal;
 }
 
-#inner {
-    padding: 10px 20px;
-    margin:0px auto;
-    background: #bbf5ff;
-    border: solid rgb(5, 57, 75);
-    border-width: 8px 0 2px 0;
-    bottom: 5px;
-    margin-bottom: 5vh;
+.navbar {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.97);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+
+
+
 }
 
-.yui-gf {
-    margin-bottom: 2em;
-    padding-bottom: 2em;
-    border-bottom: 1px solid #ccc;
+.navbar a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 5px;
+  padding: 17px 17px;
+  text-decoration: none;
+  font-size: 22px;
+  transition: 0.3s;
+
+
+
 }
 
-#hd {
-    margin: 2.5em 0 3em 0;
-    padding-bottom: 1.5em;
-    border-bottom: 1px solid #ccc
+.navbar a.port {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px 16px;
+  margin-right: 870px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 26px;
 }
 
-#hd h2 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
+/*
+.navbar a.port1:hover{
+    background: #ddd;
+    color: black;
+}*/
+.port1 {
+  display: inline-block;
+  position: relative;
+  color: #04AA6D;
 }
 
-#bd,
-#ft {
-    margin-bottom: 2em;
+.port1:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #04AA6D;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.port1:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.header {
+  padding: 250px 60px;
+  text-align: center;
+  color: #ffffff; 
+
+}
+.header2 {
+  padding: 120px 60px;
+  text-align: center;
+  color: #ffffff; 
+
+}
+
+.header h1.head {
+  font-size: 80px;
+  font-weight: bold;
+  margin-top: 5%;
+  margin-bottom: 1%;
+
+}
+
+.header h3.head {
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.header button {
+  font-size: 12px;
+}
+
+.head1 {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.button-1 {
+  background-color: #04AA6D;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: grab;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+
+}
+
+.header1 {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 7vh;
+
 }
 
 
-#ft {
-    padding: 1em 0 5em 0;
-    font-size: 92%;
-    border-top: 1px solid #ccc;
-    text-align: center;
-}
+.img1 {
+  border-radius: 50%;
+  margin-left: 5vh ;
+  width: 68%;
+  height: 68%;
 
-#ft p {
-    margin-bottom: 0;
-    text-align: center;
-}
-
-#hd h1 {
-    font-size: 48px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-h2 {
-    font-size: 152%
-}
-
-h3,
-h4 {
-    font-size: 122%;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    color: #333;
-}
-
-p {
-    font-size: 100%;
-    line-height: 18px;
-    padding-right: 3em;
-}
-
-a {
-    color: #990003
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-strong {
-    font-weight: bold;
-}
-
-li {
-    line-height: 24px;
-    border-bottom: 1px solid #ccc;
-}
-
-p.enlarge {
-    font-size: 144%;
-    padding-right: 6.5em;
-    line-height: 24px;
-}
-
-p.enlarge span {
-    color: #000
-}
-
-.contact-info {
-    margin-top: 7px;
-}
-
-.first h2 {
-    font-style: italic;
-}
-
-.last {
-    border-bottom: 0
 }
 
 
-/* //-- section styles -- */
 
-a#pdf {
-    display: block;
-    float: left;
-    background: #666;
-    color: white;
-    padding: 6px 50px 6px 12px;
-    margin-bottom: 6px;
-    text-decoration: none;
+.sidebar {
+  margin-top: 8vh;
+  width: 350px;
+  background-color: #000000;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
-a#pdf:hover {
-    background: #222;
+.sidebar a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #000000;
+  color: white;
 }
 
-.job {
+.sidebar a:hover:not(.active1) {
+  background-color: #04AA6D;
+  color: white;
+
+}
+
+.sidebar .active1:hover{
+  background-color: #04AA6D;
+  color: white;
+}
+.sidebar a:hover:not(.active2) {
+  background-color: #04AA6D;
+  color: white;
+
+}
+
+.sidebar .active2:hover{
+  background-color: #04AA6D;
+  color: white;
+}
+.sidebar a:hover:not(.active3) {
+  background-color: #04AA6D;
+  color: white;
+
+}
+
+.sidebar .active3:hover{
+  background-color: #04AA6D;
+  color: white;
+}
+.sidebar a:hover:not(.active4) {
+  background-color: #04AA6D;
+  color: white;
+
+}
+
+.sidebar .active4:hover{
+  background-color: #04AA6D;
+  color: white;
+}
+.sidebar a:hover:not(.active5) {
+  background-color: #04AA6D;
+  color: white;
+
+}
+
+.sidebar .active5:hover{
+  background-color: #04AA6D;
+  color: white;
+}
+.active1{
+  font-size: 20px;
+  text-align: left;
+  margin-left: 10px;
+}
+.active2{
+  font-size: 20px;
+  text-align: left;
+  margin-left: 6px;
+}
+.active3{
+  font-size: 20px;
+  text-align: left;
+  margin-left: 4px;
+}
+.active4{
+  font-size: 20px;
+  text-align: left;
+  margin-left: 4px;
+}.active5{
+  font-size: 20px;
+  text-align: left;
+  margin-left: 4px;
+}
+div.content {
+  padding: 50px 50px;
+  height: 1000px;
+  float: right;
+  width: 899px;
+  margin-right: 2vh;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
     position: relative;
-    margin-bottom: 1em;
-    padding-bottom: 1em;
-    border-bottom: 1px solid #ccc;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 2vh;}
 }
 
-.job h4 {
-    position: absolute;
-    top: 0.35em;
-    right: 0
-}
-
-.job p {
-    margin: 0.75em 0 3em 0;
-}
-
-.last {
-    border: none;
-}
-
-.skills-list {}
-
-.skills-list ul {
-    margin: 0;
-}
-
-.skills-list li {
-    margin: 3px 0;
-    padding: 3px 0;
-}
-
-.skills-list li span {
-    font-size: 152%;
-    display: block;
-    margin-bottom: -2px;
-    padding: 0
-}
-
-.talent {
-    width: 32%;
-    float: left
-}
-
-.talent h2 {
-    margin-bottom: 6px;
-}
-
-#srt-ttab {
-    margin-bottom: 100px;
+@media screen and (max-width: 400px) {
+  .sidebar a {
     text-align: center;
+    float: none;
+  }
+}
+.in{
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
-#srt-ttab img.last {
-    margin-top: 20px
+.line{
+  margin-top: 2px;
+  color: #04AA6D;
+}
+.h3{
+  color: #04AA6D;
+
+
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:#04AA6D; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
 }
 
-/* --// override to force 1/8th width grids -- */
-.yui-gf .yui-u {
-    width: 80.2%;
+#myBtn:hover {
+  background-color: rgb(0, 0, 0); /* Add a dark-grey background on hover */
+}
+.con{
+  background-color: #ffffffc4;
+  color: #000000;
+  padding: 20px 20px;
+  border-radius: 15px;
+  width: 1140px;
+  margin: 3vh;
+  margin-top: 0%;
+  text-align: left;
+  align-items: center;
+}
+.pc{
+  text-decoration: none;
+  color: #000000;
+}
+.pc1{
+  text-align: center;
+}
+.column {
+  float: left;
+  width: 28%;
+  margin-left: 5vh; 
+  padding: 5px;
+}
+.column1 {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  margin-left: 10vh;
+  margin-right: 2vh;
 }
 
-.yui-gf div.first {
-    width: 12.3%;
+/* Clear floats after the columns */
+.con:after {
+  content: "";
+  display: table;
+  clear: both;
 }

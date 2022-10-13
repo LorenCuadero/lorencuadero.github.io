@@ -42,11 +42,10 @@ button{
 
 #col {
   padding: 0.5rem;
-  color: #ffffff;
-  margin-left: 2rem;
-  width: 30%;
-  background-color: #3e5bcf;
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    color: #ffffff;
+    margin-left: 2rem;
+    width: 30%;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
     
 

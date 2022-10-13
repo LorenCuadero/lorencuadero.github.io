@@ -11,6 +11,7 @@
  *
  * Date: 2021-03-02T17:08Z
  */
+$("#startDate").val(new Date().toJSON().slice(0,19));
 console.log(Date.now())
 
 ( function( global, factory ) {

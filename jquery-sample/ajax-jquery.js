@@ -10,4 +10,5 @@ $(function(){
       let value = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
       $("#showDate").text(value);
     });	
+    
 })

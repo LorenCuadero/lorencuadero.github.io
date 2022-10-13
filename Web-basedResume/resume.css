@@ -41,8 +41,9 @@ button{
 }
 
 #col {
-    width: 100px;
     padding: 0%;
+    background-color: #ffffff;
+    margin: 0rem;
 
 
 }

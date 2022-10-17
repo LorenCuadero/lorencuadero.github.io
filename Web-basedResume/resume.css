@@ -117,7 +117,7 @@ p, a{
 .skill-mf .progress .progress-bar {
   height: 0.7rem;
   background-color: #0078ff;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .text{
   font-size: 15px;

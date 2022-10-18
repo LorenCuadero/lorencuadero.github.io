@@ -32,8 +32,26 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-
-    p {
+    .contains{
+      
+    }
+    .widget{
+      width: 400px;
+      height: 200px;
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.663);
+    }
+.widget .upper-right{
+  position: relative;
+  right:5;
+  width: 200px;
+}
+.widget .left{
+  position: relative;
+  left: 5;
+  width: 200px;
+}
+.p {
       color: antiquewhite;
     }
 
@@ -47,7 +65,18 @@
         <p class="text-primary float-start" style="color: antiquewhite;">Links</p>
       </div>
       <div class="col">
-        <p class="text-primary float-end " style="color: antiquewhite;">Date</p>
+        <div style="margin-left: 10rem; margin-right: 0%; float: right;" class="contains">
+            <div class="widget">
+              <div class="upper-right">
+                <img style="float: right; margin-right: 0rem; width: 10%;" class="icon" src="./cloud.png" alt="">
+                <h5 class="text-primary float-end ">Partly Cloud</h5>
+              </div>
+              <div class="left">
+                <h5 class="city"> Cebu</h5>
+                <h5 class="degree" >25</h5>
+              </div>
+            </div>
+        </div>
       </div>
     </div>
     <div class="row row-content">
@@ -59,7 +88,7 @@
 
           </div>
           <div class="d-flex align-items-center justify-content-center" style="padding-top: 1%;">
-            <h2>What is your main focus for today?</h2> <hr> <br> 
+            <h2>What is your main focus for today?</h2> <hr> <br> <hr> 
        
             <br>
 

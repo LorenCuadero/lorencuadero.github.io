@@ -1,0 +1,93 @@
+<!DOCTYPE html>  
+<html lang = "en">  
+<head>  
+<title> How to Create a TO-DO list using jQuery </title>  
+    <meta charset = "utf-8" />  
+    <link rel = "stylesheet"  
+        href =  
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  
+    <script src =  
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">  
+</script>  
+<script src =  
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">  
+</script>  
+<script src = "https://code.jquery.com/jquery-3.4.1.js"  
+            integrity=  
+            "sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  
+            crossorigin="anonymous"></script>  
+<link rel="stylesheet" href="./css/style.css">
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css' rel='stylesheet' />
+<script src="./js/jquery.js"></script>
+<script src="./js/script.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<body class = "gradient-background">  
+<div id="cons">
+<h2> Any.Do </h2>  
+  <h3> Make your day Productive! </h3>    
+<div id = "container" >  
+  <h1> Task <i class = "add">  + </i>  <i class ="removeall">  Clear </i>    <i id="res" class="load" onclick="reloadni()">  Reload </i> </h1>  
+  <input type = "text" placeholder = "Add New task">  
+  <ul>  
+    <li class="task"> <span> <i  class = "fa fa-trash"> </i> </span> <number> </number> Cut your long nails </li>  
+    <li class="task"> <span> <i class = "fa fa-trash"> </i> </span> <number> </number> Read educational books </li>  
+    <li class="task"> <span> <i class = "fa fa-trash"> </i> </span> <number> </number> Fix your bed  </li>
+    <li > <span> <i class = "fa fa-trash"> </i> </span> <number> </number> <span id="tasks">   </span> </li>
+          
+  </ul>  
+  <div id="results"></div>
+</div>  
+</div>
+<script>
+  function reloadni(){
+  let url = "https://jsonplaceholder.typicode.com/todos/";
+  let randomNumber = Math.floor(Math.random()*100);
+  url = url + randomNumber;
+  $.get(url, (data) => {
+    $("#tasks").text(data.title); 
+    $("#tasks").text(data.title); 
+    $("#tasks").text(data.title); 
+    $("#tasks").text(data.title); 
+    $("#tasks").text(data.title); 
+  })
+}
+function updateNumbers() {  
+var lists = document.querySelectorAll("number");  
+for(var i = 0; i < lists.length; i++) {  
+  $(lists[i]).html(i+1 + ") ");  
+}  
+}  
+updateNumbers();  
+$("ul").on("click", "li", function () {  
+$(this).toggleClass("completed");  
+});  
+$("ul").on('click', "span", function (e) {  
+e.stopPropagation();  
+$(this).closest("li").fadeOut(500,function() {  
+$(this).remove();  
+updateNumbers();  
+});  
+});  
+$(".removeall").on('click', function (e) {  
+$("li").fadeOut(500, function() {  
+  $(this).remove();  
+});  
+});  
+$("input[type='text']").keypress(function(e) {  
+if(e.which === 13) {  
+var todoText = $(this).val();  
+if( $(this).val() !== "") {  
+$("ul").append("<li> <span> <i class='fa fa-trash'> </i> </span>" + "<number></number>" + todoText + "</li>");  
+  }  
+updateNumbers();  
+$(this).val("");  
+}  
+});  
+$(".add").click(function() {  
+$("input[type='text']").fadeToggle(200);  
+});
+</script>
+
+</body>  
+</html>   

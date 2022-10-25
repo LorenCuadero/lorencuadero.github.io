@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="./js/form_validation.js"></script>
+<script src="./js/ajax-jquery.js"></script>
+<script src="./js/jquery.js"></script>
+<script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="js/form-validation.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
+<body>
+  <div class="container">
+    <h2 style="color:#041d2b;" class="title">Registration</h2>
+    <form action="#" name="registration">
+      <label for="firstname">First Name</label>
+      <input class="restrict" type="text" name="firstname" id="firstname" placeholder="John" />
+
+      <label for="lastname">Last Name</label>
+      <input class="restrict" type="text" name="lastname" id="lastname" placeholder="Doe" />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="john@doe.com" />
+      <label for="birthdate" onabort="isOverEighteen">Birthdate</label>
+      <input type="date" name="birthdate" id="birthdate" placeholder="john@doe.com" />
+      <label class="restrict" for="phonenumber">Phone Number</label>
+      <input type="phonenumber" name="phonenumber" id="phonenumber" placeholder="+639123456789" />
+
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" />
+
+      <button id="submit" type="submit">Register</button>
+    </form>
+    <div id="popup1" class="overlay">
+      <div class="popup"> <a class="close" href="#">&times;</a>
+
+        <h2><b>Succesfully created an account!</b></h2>
+        <hr>
+        <div class="content">
+          Thank you for signing up!
+        </div>
+      </div>
+    </div>
+
+    <div class="article-reference">
+     Already have an account? <a href="#">Login Here</a>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+  font-family: "Open Sans";
+  box-shadow: 5px 10px #888888;
+}
+div {
+  border-radius: 10px;
+}
+
+#signup {
+  width: 70%;
+  height: 30%;
+  margin: 0px 400px;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.input-group {
+  /* margin:20px 0;  */
+  position: relative;
+}
+
+.input-group label {
+  display: inline-block;
+  /* margin-bottom: 5px; */
+}
+
+.input-group input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.error input {
+  border: 3px red solid;
+}
+
+.success input {
+  border: 3px green solid;
+}
+
+.input-group i {
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  visibility: hidden;
+}
+
+.success i.fa-check-circle {
+  visibility: visible;
+  color: green;
+}
+
+.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: red;
+}
+
+.input-group p {
+  font-size: 15px;
+  color: red;
+  visibility: hidden;
+}
+
+.error p {
+  visibility: visible;
+}
+
+.btn {
+  width: 100%;
+  font-size: 20px;
+  background-color: rgb(61, 177, 11);
+  color: rgb(22, 19, 19);
+  text-transform: uppercase;
+  border: none;
+}
+
+.btn h2 button:hover {
+  background-color: rgb(236, 124, 43);
+}
+
+.contents {
+  padding: 2px 20px;
+  margin-top: 50px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px #d5d2d2;
+}
+
+.container {
+  padding: 0px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: rgb(11, 11, 11);
+  text-align: center;
+  border-radius: 10px;
+}

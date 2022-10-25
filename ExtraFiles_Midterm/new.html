@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   
+
+    <head runat="server"> <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    
+        <script type="text/javascript">
+        function AlphaNumeric(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            var allowchar = /^([a-zA-Z0-9 ])$/;
+            if (allowchar.test(String.fromCharCode(charCode)) == true) 
+            {
+                return true;
+            }
+            else 
+            {
+                alert("Invalid Character");
+                return false;
+            }
+        }
+        </script>
+    
+    </head>
+    <body>
+        <form id="form1" runat="server">
+        <div>
+        <asp:TextBox ID="TextBox2" runat="server" onkeyPress="return AlphaNumeric(event);"></asp:TextBox>
+        </div>
+        </form>
+    </body>
+    </html>

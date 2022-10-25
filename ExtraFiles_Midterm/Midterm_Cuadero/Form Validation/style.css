@@ -1,0 +1,121 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./phpinas.jpg);
+    background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2px 3rem;
+}
+
+.btn {
+    width:100%;
+    padding:5px;
+    font-size: 20px;
+    background-color: rgb(39, 167, 23);
+    color:rgb(22, 19, 19);
+    border:none;
+}
+
+.btn h2 button:hover{
+   background-color: rgb(236, 124, 43);
+
+}
+
+
+
+.container{
+   padding:15px;
+   background-color: rgba(255, 255, 255, 0.972);
+   text-align: center;
+   border-radius: 8px;
+   padding-top: 2%;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   width: 399px;
+   float: left;
+  
+
+  
+}
+form{
+    float: left;
+}
+
+
+.input-group {
+    /* margin:20px 0;  */
+    position:relative;
+    border-radius: 5px;
+}
+
+.input-group label {
+    display:inline-block;
+    /* margin-bottom: 5px; */
+}
+
+.input-group input {
+    display:block;
+    width:100%;
+    padding:5px;   
+    border-radius: 5px;
+    border: 1px solid rgb(106, 104, 104);
+
+}
+
+.error input {
+    border:1px red solid;
+}
+
+.success input {
+    border:1px green solid;
+}
+
+ .input-group i {
+     position:absolute;
+     right:10px;
+     top:35px;
+     visibility: hidden;
+ }
+
+
+ .success i.fa-check-circle{
+     visibility: visible;
+     color:green;
+ }
+
+ .error i.fa-exclamation-circle {
+    visibility: visible;
+    color:red;
+}
+
+
+ .input-group p {
+     font-size: 15px;
+     color:red;
+     visibility: hidden;
+     padding:2px;
+ }
+
+ .error p {
+     visibility: visible;
+ }
+h1{
+    margin-left: 450px;
+}
+ 
+
+
+
+
+
+
+
+
+
